@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mp3", "mp3\mp3.csproj", "{2E214E0E-1619-484C-8EBA-A8ECDB54D139}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "mp3setup", "mp3setup\mp3setup.vdproj", "{79FC4BC0-4AFF-47C7-AFD8-65EE26A1C74B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Debug|x86.Build.0 = Debug|Any CPU
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Release|x86.ActiveCfg = Release|Any CPU
+		{2E214E0E-1619-484C-8EBA-A8ECDB54D139}.Release|x86.Build.0 = Release|Any CPU
+		{79FC4BC0-4AFF-47C7-AFD8-65EE26A1C74B}.Debug|Any CPU.ActiveCfg = Debug
+		{79FC4BC0-4AFF-47C7-AFD8-65EE26A1C74B}.Debug|x86.ActiveCfg = Debug
+		{79FC4BC0-4AFF-47C7-AFD8-65EE26A1C74B}.Release|Any CPU.ActiveCfg = Release
+		{79FC4BC0-4AFF-47C7-AFD8-65EE26A1C74B}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {919ED407-33E5-4095-B2C0-DEB00EA6EB76}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,74 @@
+﻿<Window x:Class="mp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mp3"
+        mc:Ignorable="d"
+        Title="Mp3" Height="200" Width="400"
+        Icon="osaka.ico">
+
+    <TabControl x:Name="mainTabControl">
+        <!-- Player Tab -->
+        <TabItem Header="Player">
+            <Grid ShowGridLines="False">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!-- Shuffle Button -->
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0" x:Name="shuffle" Click="ShuffleBtn">Shuffle</Button>
+                </Grid>
+
+                <!-- Playback Buttons -->
+                <Button Grid.Row="2" Grid.Column="1" x:Name="play" Click="PlayBtn">Play</Button>
+                <Button Grid.Row="2" Grid.Column="2" x:Name="next" Click="NextBtn">Next</Button>
+                <Button Grid.Row="2" Grid.Column="0" x:Name="prev" Click="PrevBtn">Prev.</Button>
+
+                <!-- Volume Slider and Display -->
+                <StackPanel Grid.Row="0" Grid.Column="2">
+                    <TextBlock x:Name="volumeDisplay" Text="{Binding ElementName=volume, Path=Value, StringFormat='Volume: {0}%'}" />
+                    <Slider x:Name="volume" Value="50" Maximum="100" Minimum="0" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="VolumeChange"></Slider>
+                </StackPanel>
+
+                <!-- Display Label -->
+                <Label Grid.Row="1" Grid.Column="0" x:Name="displayLabel" Grid.ColumnSpan="3" 
+                       Background="Black" Foreground="Green" HorizontalContentAlignment="Center" 
+                       VerticalContentAlignment="Center" FontWeight="Bold"/>
+            </Grid>
+        </TabItem>
+
+        <!-- Folders Tab -->
+        <TabItem Header="Folders">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Add Folder Button -->
+                <Button Grid.Row="0" Content="Add Folder" x:Name="addFolderBtn" HorizontalAlignment="Left" Click="AddFolderBtn"/>
+
+                <!-- List of Saved Folders -->
+                <ListBox Grid.Row="1" x:Name="folderListBox" Margin="2" Background="Black" Foreground="Green">
+                </ListBox>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>
