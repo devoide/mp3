@@ -13,7 +13,7 @@ Streaming platforms and automated mixers like YouTube’s can sometimes miss the
 
 ## How to Use
 1. **Download the Setup File**:  
-   Head to the [Releases](./releases) section of this repository and download the latest setup file.
+   Head to the Releases section of this repository and download the latest setup file.
 
 2. **Install and Run**:  
    Run the setup file to install the program on your device. Once installed, launch the application.
